@@ -10,13 +10,15 @@
     <style>
         body {
             font-family: 'Open Sans', sans-serif;
-            background-color: #f4f7f6;
+            background: #f0f4f8; /* Soft background color */
             color: #333;
         }
 
         /* Navbar */
         .navbar {
-            background-color: #b0e0e6; /* Pastel Blue */
+            background: linear-gradient(135deg, #a2c2e6, #e0f7fa); /* Pastel gradient */
+            border-radius: 0 0 20px 20px;
+            padding: 0.5rem 1rem;
         }
 
         .navbar-nav .nav-link {
@@ -36,7 +38,7 @@
 
         /* Header */
         header {
-            background-color: #e0f7fa; /* Pastel Teal */
+            background: linear-gradient(135deg, #e0f7fa, #ffffff); /* Soft gradient */
             color: #333;
             padding: 60px 0;
             text-align: center;
@@ -67,6 +69,8 @@
             width: 180px;
             height: 180px;
             object-fit: cover;
+            border: 5px solid #ffffff; /* White border */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             margin-left: 20px;
             margin-right: 40px;
             float: right;
@@ -81,34 +85,43 @@
         header p {
             font-size: 1.25rem;
             margin-top: 0;
+            max-width: 600px;
+            margin: 0 auto;
         }
 
         /* Sections */
         section {
             padding: 60px 0;
-            background-color: #f0f4c3; /* Pastel Yellow */
+            background-color: #f9f9f9; /* Light background */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
         }
 
         section:nth-child(even) {
-            background-color: #e3f2fd; /* Pastel Light Blue */
+            background-color: #ffffff; /* Alternate background */
         }
 
         section h2 {
             font-size: 2rem;
             color: #ff6f61; /* Pastel Coral */
             margin-bottom: 30px;
+            text-align: center;
         }
 
         section p {
             color: #333;
+            line-height: 1.6;
+            text-align: center;
         }
 
         /* Footer */
         footer {
-            background-color: #b0e0e6; /* Pastel Blue */
+            background: linear-gradient(135deg, #a2c2e6, #e0f7fa); /* Pastel gradient */
             color: #333;
             text-align: center;
             padding: 20px 0;
+            border-radius: 20px 20px 0 0;
             margin-top: 30px;
         }
 
@@ -132,6 +145,7 @@
             font-size: 1.1rem;
             font-weight: 600;
             text-transform: uppercase;
+            border-radius: 20px; /* Rounded corners */
             transition: background-color 0.3s ease;
         }
 
@@ -271,6 +285,6 @@
             <p>&copy; 2024 Vidhi Ghadi. All Rights Reserved.</p>
         </div>
     </footer>
-
 </body>
+
 </html>
