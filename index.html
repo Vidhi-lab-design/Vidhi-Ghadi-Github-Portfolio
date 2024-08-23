@@ -10,34 +10,34 @@
     <style>
         body {
             font-family: 'Open Sans', sans-serif;
-            background-color: #f0f0f0;
+            background-color: #f5f5f5;
             color: #333;
         }
 
         /* Navbar */
         .navbar {
-            background-color: #1c1f4a;
+            background-color: #d8cfc4;
         }
 
         .navbar-nav .nav-link {
-            color: #ffffff !important;
+            color: #333 !important;
             margin-right: 20px;
             font-size: 1.1rem;
         }
 
         .navbar-nav .nav-link:hover {
-            color: #cccccc !important;
+            color: #0066cc !important;
         }
 
         .navbar-brand {
             font-weight: bold;
-            color: #ffffff !important;
+            color: #333 !important;
         }
 
         /* Header */
         header {
-            background-color: #1c1f4a;
-            color: white;
+            background-color: #d8cfc4;
+            color: #333;
             padding: 60px 0;
             text-align: center;
         }
@@ -45,15 +45,15 @@
         header .header-content {
             display: flex;
             align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            animation: slideDown 1s ease-out;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            animation: fadeIn 1s ease-out;
         }
 
-        @keyframes slideDown {
+        @keyframes fadeIn {
             from {
                 opacity: 0;
-                transform: translateY(-50px);
+                transform: translateY(-30px);
             }
 
             to {
@@ -64,45 +64,49 @@
 
         header img {
             border-radius: 50%;
-            width: 180px; /* Increased size */
-            height: 180px; /* Increased size */
+            width: 180px;
+            height: 180px;
             object-fit: cover;
-            margin-bottom: 20px; /* Margin added below image */
+            margin-left: 20px;
+            margin-right: 40px;
+            float: right;
         }
 
         header h1 {
             font-size: 2.5rem;
             margin-bottom: 10px;
-            font-style: italic;
-            text-align: center;
+            color: #0066cc;
         }
 
         header p {
             font-size: 1.25rem;
             margin-top: 0;
-            text-align: center;
         }
 
         /* Sections */
         section {
             padding: 60px 0;
+            background-color: #f0e8e0;
+        }
+
+        section:nth-child(even) {
+            background-color: #e3d6c4;
         }
 
         section h2 {
             font-size: 2rem;
-            color: #1c1f4a;
+            color: #0066cc;
             margin-bottom: 30px;
         }
 
-        /* Internship Section */
-        #internship p {
-            margin-bottom: 20px; /* Add space between internships */
+        section p {
+            color: #333;
         }
 
         /* Footer */
         footer {
-            background-color: #1c1f4a;
-            color: #ffffff;
+            background-color: #d8cfc4;
+            color: #333;
             text-align: center;
             padding: 20px 0;
             margin-top: 30px;
@@ -111,20 +115,35 @@
         .social-icons a {
             margin: 0 15px;
             font-size: 1.5rem;
-            color: white;
+            color: #333;
             text-decoration: none;
         }
 
         .social-icons a:hover {
-            color: #cccccc;
+            color: #0066cc;
+        }
+
+        /* Buttons */
+        .btn-custom {
+            background-color: #0066cc;
+            color: #f5f5f5;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-custom:hover {
+            background-color: #004a99;
         }
     </style>
 </head>
 
 <body>
-
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">My Portfolio</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -134,7 +153,8 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="https://drive.google.com/file/d/18q1qYVtthlX8X_yvhyd1lfHWNwibJVGu/view?usp=drive_link" target="_blank">Resume</a>
+                        <a class="nav-link" href="https://drive.google.com/file/d/18q1qYVtthlX8X_yvhyd1lfHWNwibJVGu/view?usp=drive_link"
+                            target="_blank">Resume</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#projects">Projects</a>
@@ -170,10 +190,10 @@
     </header>
 
     <!-- Projects Section -->
-    <section id="projects" style="background-color: #f8f9fa;">
+    <section id="projects">
         <div class="container">
             <h2>Projects</h2>
-            <p>Dissertation </p>
+            <p>Dissertation</p>
         </div>
     </section>
 
@@ -195,16 +215,14 @@
     </section>
 
     <!-- Internship Section -->
-    <section id="internship" style="background-color: #f8f9fa;">
+    <section id="internship">
         <div class="container">
             <h2>Internship</h2>
             <p><strong>1. Maharashtra Economic Development Council, Mumbai</strong> (December 2022 to January 2023)<br>
-                <em>Role:</em> Administration and Operations Executive Intern<br>
-            </p>
-            <p><strong>2. Healing Anonymously, Jaipur (Remote)</strong> (May 2021 to October 2021)<br>
-                <em>Role:</em> Content Writer and Social Media<br>
-            </p>
-            <p><strong>3. UnSchool, Hyderabad (Remote)</strong> (December 2020 to January 2021)<br>
+                <em>Role:</em> Administration and Operations Executive Intern<br><br>
+                <strong>2. Healing Anonymously, Jaipur (Remote)</strong> (May 2021 to October 2021)<br>
+                <em>Role:</em> Content Writer and Social Media<br><br>
+                <strong>3. UnSchool, Hyderabad (Remote)</strong> (December 2020 to January 2021)<br>
                 <em>Role:</em> Business Development Intern<br>
             </p>
         </div>
@@ -215,17 +233,16 @@
         <div class="container">
             <h2>Skills</h2>
             <p>
-                1. Data Cleaning/Analysis<br>
-                2. MS Tools<br>
+                1. Data Cleaning/Analytics<br>
+                2. MS Excel<br>
                 3. Tableau, QGIS, R<br>
-                4. Data Exploration/ Viisualization<br>
+                4. Data Exploration/ Visualization<br>
                 5. Strategic Planning<br>
                 6. Critical Thinking<br>
                 7. Problem-Solving<br>
-                8. Data-Driven Storytelling<br>
-                9. Leadership and Team Management<br>
-                10. Effective Communication<br>
-                11. Multilingual Proficiency (English, Hindi, Gujarati, Marathi, Basic Spanish)
+                8. Leadership and Team Management<br>
+                9. Effective Communication<br>
+                10. Multilingual Proficiency (English, Hindi, Gujarati, Marathi, Basic Spanish)
             </p>
         </div>
     </section>
@@ -236,13 +253,13 @@
             <h2>Contact</h2>
             <div class="social-icons">
                 <a href="mailto:ghadividhi79@gmail.com">
-                    <img src="https://img.icons8.com/ios/50/000000/gmail.png" alt="Gmail Icon">
+                    <img src="https://img.icons8.com/ios/50/333333/gmail.png" alt="Gmail Icon">
                 </a>
                 <a href="https://www.linkedin.com/in/vidhi-ghadi-7b1471251/" target="_blank">
-                    <img src="https://img.icons8.com/ios/50/000000/linkedin.png" alt="LinkedIn Icon">
+                    <img src="https://img.icons8.com/ios/50/333333/linkedin.png" alt="LinkedIn Icon">
                 </a>
                 <a href="https://www.instagram.com/vidhuarca/" target="_blank">
-                    <img src="https://img.icons8.com/ios/50/000000/instagram-new.png" alt="Instagram Icon">
+                    <img src="https://img.icons8.com/ios/50/333333/instagram-new.png" alt="Instagram Icon">
                 </a>
             </div>
         </div>
@@ -250,4 +267,10 @@
 
     <!-- Footer -->
     <footer>
-        <div
+        <div class="container">
+            <p>&copy; 2024 Vidhi Ghadi. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
