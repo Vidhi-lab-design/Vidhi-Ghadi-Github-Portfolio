@@ -47,6 +47,18 @@
             align-items: center;
             justify-content: center;
             flex-wrap: wrap;
+            animation: slideDown 1s ease-out;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         header img {
@@ -55,16 +67,20 @@
             height: 150px;
             object-fit: cover;
             margin-right: 20px;
+            float: left;
         }
 
         header h1 {
             font-size: 2.5rem;
             margin-bottom: 10px;
+            font-style: italic;
+            text-align: left;
         }
 
         header p {
             font-size: 1.25rem;
             margin-top: 0;
+            text-align: left;
         }
 
         /* Sections */
@@ -194,19 +210,17 @@
         <div class="container">
             <h2>Skills</h2>
             <p>
-                1. Data Analytics<br>
-                2. Microsoft Excel<br>
-                3. Tableau<br>
-                4. Data Exploration<br>
-                5. Data Visualization<br>
-                6. Strategic Planning<br>
-                7. Critical Thinking<br>
-                8. Problem-Solving<br>
-                9. Data-Driven Storytelling<br>
-                10. Leadership<br>
-                11. Team Management<br>
-                12. Effective Communication<br>
-                13. Multilingual Proficiency (English, Hindi, Gujarati, Marathi, Basic Spanish)
+                1. Data Cleaning/Analysis<br>
+                2. MS Tools<br>
+                3. Tableau, QGIS, R<br>
+                4. Data Exploration/ Viisualization<br>
+                5. Strategic Planning<br>
+                6. Critical Thinking<br>
+                7. Problem-Solving<br>
+                8. Data-Driven Storytelling<br>
+                9. Leadership and Team Management<br>
+                10. Effective Communication<br>
+                11. Multilingual Proficiency (English, Hindi, Gujarati, Marathi, Basic Spanish)
             </p>
         </div>
     </section>
@@ -229,15 +243,4 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Vidhi Ghadi. All Rights Reserved.</p>
-        </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.js"></script>
-</body>
-
-</html>
+   
