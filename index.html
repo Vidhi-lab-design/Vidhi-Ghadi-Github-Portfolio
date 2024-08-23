@@ -46,7 +46,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            flex-wrap: wrap;
+            flex-direction: column;
             animation: slideDown 1s ease-out;
         }
 
@@ -55,6 +55,7 @@
                 opacity: 0;
                 transform: translateY(-50px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -63,24 +64,23 @@
 
         header img {
             border-radius: 50%;
-            width: 150px;
-            height: 150px;
+            width: 180px; /* Increased size */
+            height: 180px; /* Increased size */
             object-fit: cover;
-            margin-right: 20px;
-            float: left;
+            margin-bottom: 20px; /* Margin added below image */
         }
 
         header h1 {
             font-size: 2.5rem;
             margin-bottom: 10px;
             font-style: italic;
-            text-align: left;
+            text-align: center;
         }
 
         header p {
             font-size: 1.25rem;
             margin-top: 0;
-            text-align: left;
+            text-align: center;
         }
 
         /* Sections */
@@ -92,6 +92,11 @@
             font-size: 2rem;
             color: #1c1f4a;
             margin-bottom: 30px;
+        }
+
+        /* Internship Section */
+        #internship p {
+            margin-bottom: 20px; /* Add space between internships */
         }
 
         /* Footer */
@@ -177,14 +182,14 @@
         <div class="container">
             <h2>Qualifications</h2>
             <p><strong>Masters- Post Graduation</strong><br>
-               M.Sc. Economics (Data Analytics) expected 2025<br>
-               Symbiosis School of Economics<br>
-               Symbiosis International University, Pune<br><br>
+                M.Sc. Economics (Data Analytics) expected 2025<br>
+                Symbiosis School of Economics<br>
+                Symbiosis International University, Pune<br><br>
 
-               <strong>Graduation</strong><br>
-               B.A. in Economics 2023<br>
-               Wilson College, Mumbai<br>
-               graduated with 9.01 CGPA.
+                <strong>Graduation</strong><br>
+                B.A. in Economics 2023<br>
+                Wilson College, Mumbai<br>
+                graduated with 9.01 CGPA.
             </p>
         </div>
     </section>
@@ -194,13 +199,13 @@
         <div class="container">
             <h2>Internship</h2>
             <p><strong>1. Maharashtra Economic Development Council, Mumbai</strong> (December 2022 to January 2023)<br>
-               <em>Role:</em> Administration and Operations Executive Intern<br>
-
-               <strong>2. Healing Anonymously, Jaipur (Remote)</strong> (May 2021 to October 2021)<br>
-               <em>Role:</em> Content Writer and Social Media<br>
-
-               <strong>3. UnSchool, Hyderabad (Remote)</strong> (December 2020 to January 2021)<br>
-               <em>Role:</em> Business Development Intern<br>
+                <em>Role:</em> Administration and Operations Executive Intern<br>
+            </p>
+            <p><strong>2. Healing Anonymously, Jaipur (Remote)</strong> (May 2021 to October 2021)<br>
+                <em>Role:</em> Content Writer and Social Media<br>
+            </p>
+            <p><strong>3. UnSchool, Hyderabad (Remote)</strong> (December 2020 to January 2021)<br>
+                <em>Role:</em> Business Development Intern<br>
             </p>
         </div>
     </section>
@@ -231,16 +236,18 @@
             <h2>Contact</h2>
             <div class="social-icons">
                 <a href="mailto:ghadividhi79@gmail.com">
-                <img src="https://img.icons8.com/ios/50/000000/gmail.png" alt="Gmail Icon">
-            </a>
-            <a href="https://www.linkedin.com/in/vidhi-ghadi-7b1471251/" target="_blank">
-                <img src="https://img.icons8.com/ios/50/000000/linkedin.png" alt="LinkedIn Icon">
-            </a>
-            <a href="https://www.instagram.com/vidhuarca/" target="_blank">
-                <img src="https://img.icons8.com/ios/50/000000/instagram-new.png" alt="Instagram Icon">
+                    <img src="https://img.icons8.com/ios/50/000000/gmail.png" alt="Gmail Icon">
+                </a>
+                <a href="https://www.linkedin.com/in/vidhi-ghadi-7b1471251/" target="_blank">
+                    <img src="https://img.icons8.com/ios/50/000000/linkedin.png" alt="LinkedIn Icon">
+                </a>
+                <a href="https://www.instagram.com/vidhuarca/" target="_blank">
+                    <img src="https://img.icons8.com/ios/50/000000/instagram-new.png" alt="Instagram Icon">
                 </a>
             </div>
         </div>
     </section>
 
-   
+    <!-- Footer -->
+    <footer>
+        <div
